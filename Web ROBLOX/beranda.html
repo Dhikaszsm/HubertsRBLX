@@ -6,6 +6,37 @@
     <title>Website Hubers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        @media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Susun vertikal di layar kecil */
+        align-items: flex-start; /* Posisi tombol ke kiri */
+    }
+
+    .button-container a {
+        width: 100%; /* Tombol memenuhi lebar kontainer */
+        text-align: center; /* Teks tetap di tengah */
+    }
+}
+        .button-container {
+    display: flex; /* Membuat elemen di dalamnya sejajar secara horizontal */
+    justify-content: space-between; /* Membuat tombol berada di kedua sisi (kiri-kanan) */
+    align-items: center; /* Menyelaraskan elemen secara vertikal */
+    gap: 10px; /* Memberikan jarak antar elemen */
+}
+
+.button-container a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    padding: 10px 20px; /* Menambahkan ruang di dalam tombol */
+    background-color: #ff9800; /* Warna latar tombol */
+    color: white; /* Warna teks tombol */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    font-size: 14px; /* Ukuran teks */
+    text-align: center;
+}
+
+.button-container a:hover {
+    background-color: #e68a00; /* Warna tombol saat hover */
+}
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
